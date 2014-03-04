@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Using AngularJS with Umbraco</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/styles.css"/>
+  </head>
+  <body>
+    <article>
+      <section>
+        <h2>Using Angular JS & Umbraco</h2>
+      </section>
+      <section>
+        <h2>Hello!        </h2>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2>What is Umbraco?</h2>
+      </section>
+      <section class="bg-photo bg-photo--umbraco">
+        <h2>An Open Source .NET CMS</h2>
+      </section>
+      <section>
+        <h2>New Back Office UI in V7</h2>
+      </section>
+      <section>
+        <h2>Backoffice written in Angular JS</h2>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2>Who's using Umbraco?</h2>
+      </section>
+      <section data-bespoke-state="white" class="bg-photo bg-photo--wired light">
+        <h2>Wired.co.uk</h2>
+      </section>
+      <section data-bespoke-state="white" class="bg-photo bg-photo--asp light">
+        <h2>ASP.net</h2>
+      </section>
+      <section data-bespoke-state="white" class="bg-photo bg-photo--redbull light">
+        <h2>RedBullStratos.com</h2>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2>Why Angular JS?</h2>
+      </section>
+      <section>
+        <h2>General Slide</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2>What is a Data Type?</h2>
+      </section>
+      <section>
+        <h2>General Slide</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a></h3>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2>Extending Umbraco</h2>
+      </section>
+      <section>
+        <h2>Demo</h2>
+      </section>
+      <section data-bespoke-state="keyslide" class="light">
+        <h2 class="bullet">What did we just build?</h2>
+        <ul>
+          <li>A Google Map Property Editor</li>
+          <li>Allowing content editors to easily pick a location</li>
+          <li>Giving a nicer experience than a textbox with lat & lon</li>
+        </ul>
+      </section>
+      <section data-bespoke-state="white" class="bg-photo bg-photo--party-kid light">
+        <h2>Happy Content Editors</h2>
+      </section>
+      <section>
+        <h2>All with HTML, CSS & JavaScript</h2>
+        <h3>without C# & Visual Studio</h3>
+      </section>
+      <section data-bespoke-state="white" class="bg-photo bg-photo--large-carlton light">
+        <h2>Happy Developers </h2>
+      </section>
+      <section>
+        <h2>Package Manifest</h2>
+        <h3>Defining our property editor</h3>
+        <pre><code class="language-javascript">"propertyEditors": [
+  {
+    "alias": "GoogleMaps",
+    "name": "Google Map Location Picker",
+    "editor": {
+      "view": "~/app_plugins/googlemaps/editor.html",
+      "valueType": "JSON"
+  }
+]</code></pre>
+      </section>
+      <section>
+        <h2>Package Manifest</h2>
+        <h3>Adding in configuration options</h3>
+        <pre><code class="language-javascript">"prevalues": {
+  "fields": [{
+    "label": "Initial Latitude",
+    "description": "This is used when no value set",
+    "key": "initialLat",
+    "view": "string"
+  }]
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Package Manifest</h2>
+        <h3>Adding Dependencies</h3>
+        <pre><code class="language-javascript">"javascript": [
+  "~/app_plugins/googlemaps/js/editor.js"
+],
+"css":[
+  "~/app_plugins/googlemaps/css/editor.css"
+]
+</code></pre>
+      </section>
+      <section data-bespoke-hash="named-route">
+        <h2>Named Route</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
+        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
+      </section>
+      <section data-bespoke-state="emphatic">
+        <h2>Emphatic Slide!</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3>
+      </section>
+      <section><img src="images/me.png" class="avatar avatar--small">
+        <hr>
+        <h2>Thanks</h2>
+        <h3>Warren Buckley</h3><a href="http://twitter.com/warrenbuckley">@warrenbuckley</a>
+        <a href="http://github.com/warrenbuckley">github.com/warrenbuckley</a>
+        <p>warren@creativewebspecialist.co.uk</p>
+      </section>
+    </article>
+    <script src="scripts/scripts.js"></script>
+  </body>
+</html>
