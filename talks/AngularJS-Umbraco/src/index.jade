@@ -1,0 +1,158 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Using AngularJS with Umbraco
+
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,600', rel='stylesheet', type='text/css')
+
+    // build:css styles/styles.css
+    //- Check out 'src/bower_components/prism/themes/' for available themes
+    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    // endbuild
+
+  body
+
+    article
+
+      section
+        h2 Using Angular JS & Umbraco
+
+      section
+        h2 Hello!        
+
+      section.light(data-bespoke-state='keyslide')
+        h2 What is Umbraco?
+
+      section.bg-photo.bg-photo--umbraco
+        h2 An Open Source .NET CMS
+
+      section
+        h2 New Back Office UI in V7
+
+      section
+        h2 Backoffice written in Angular JS
+
+      section.light(data-bespoke-state='keyslide')
+          h2 Who's using Umbraco?
+
+       section.bg-photo.bg-photo--wired.light(data-bespoke-state='white')
+        h2 Wired.co.uk
+
+      section.bg-photo.bg-photo--asp.light(data-bespoke-state='white')
+        h2 ASP.net
+
+      section.bg-photo.bg-photo--redbull.light(data-bespoke-state='white')
+        h2 RedBullStratos.com
+
+      section.light(data-bespoke-state='keyslide')
+        h2 Why Angular JS?
+
+      section
+        h2 General Slide
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+
+      section.light(data-bespoke-state='keyslide')
+        h2 What is a Data Type?
+
+      section
+        h2 General Slide
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+
+      section.light(data-bespoke-state='keyslide')
+        h2 Extending Umbraco
+
+      section
+        h2 Demo
+
+      section.light(data-bespoke-state='keyslide')
+        h2.bullet What did we just build?
+        ul
+          li A Google Map Property Editor
+          li Allowing content editors to easily pick a location
+          li Giving a nicer experience than a textbox with lat & lon
+
+      section.bg-photo.bg-photo--party-kid.light(data-bespoke-state='white')
+        h2 Happy Content Editors
+
+      section
+        h2 All with HTML, CSS & JavaScript
+        h3 without C# & Visual Studio
+
+      section.bg-photo.bg-photo--large-carlton.light(data-bespoke-state='white')
+        h2 Happy Developers 
+
+      section
+        h2 Package Manifest
+        h3 Defining our property editor
+        pre
+          code.language-javascript.
+            "propertyEditors": [
+              {
+                "alias": "GoogleMaps",
+                "name": "Google Map Location Picker",
+                "editor": {
+                  "view": "~/app_plugins/googlemaps/editor.html",
+                  "valueType": "JSON"
+              }
+            ]
+      section
+        h2 Package Manifest
+        h3 Adding in configuration options
+        pre
+          code.language-javascript.
+            "prevalues": {
+              "fields": [{
+                "label": "Initial Latitude",
+                "description": "This is used when no value set",
+                "key": "initialLat",
+                "view": "string"
+              }]
+            }
+
+      section
+        h2 Package Manifest
+        h3 Adding Dependencies
+        pre
+          code.language-javascript.
+            "javascript": [
+              "~/app_plugins/googlemaps/js/editor.js"
+            ],
+            "css":[
+              "~/app_plugins/googlemaps/css/editor.css"
+            ]
+
+      section(data-bespoke-hash='named-route')
+        h2 Named Route
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      section(data-bespoke-state='emphatic')
+        h2 Emphatic Slide!
+        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a>
+
+      section
+        img.avatar.avatar--small(src='images/me.png')
+        hr
+        h2 Thanks
+        h3 Warren Buckley
+        <a href="http://twitter.com/warrenbuckley">@warrenbuckley</a>
+        <a href="http://github.com/warrenbuckley">github.com/warrenbuckley</a>
+        p warren@creativewebspecialist.co.uk
+
+
+    // build:js scripts/scripts.js
+    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+    script(src='bower_components/prism/prism.js')
+    script(src='scripts/main.js')
+    // endbuild
