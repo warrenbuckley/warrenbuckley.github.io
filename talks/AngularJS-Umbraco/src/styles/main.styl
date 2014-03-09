@@ -88,6 +88,11 @@ article
     page-break-before: always
     position: static
     margin: 0
+    
+.full-screen
+  width:100%
+  margin-left:0
+  left:0
 
 .bespoke-before
   transform: translateX(slide_transition_nudge_x * -1) translateX(slide_width / -2) rotateY(slide_transition_rotate_y * -1) translateX(slide_width / -2)
@@ -249,9 +254,6 @@ a
 .logo
   background-position: center
   background-repeat: no-repeat
-  &--gulp
-    background-size: 25%
-    background-image: url(../images/gulp.png)
 
 .bg-photo
   background-size: cover
@@ -264,9 +266,11 @@ a
   &--umbraco
     background-image: url(../images/umbraco.png)
   &--wired
-    background-image: url(../images/wired.co.uk.png)
+    background-image: url(../images/wired.jpg)
   &--asp
-    background-image: url(../images/asp.net.png)
+    background-image: url(../images/asp.jpg)
+  &--redbull
+    background-image: url(../images/redbull.jpg)
   &--large-carlton
     background-image: url(../images/large-carlton.gif)
   &--party-kid

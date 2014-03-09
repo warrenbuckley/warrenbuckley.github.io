@@ -115,6 +115,11 @@ article.bespoke-parent.white {
     margin: 0;
   }
 }
+.full-screen {
+  width: 100%;
+  margin-left: 0;
+  left: 0;
+}
 .bespoke-before {
   -webkit-transform: translateX(640px) translateX(-320px) rotateY(-20deg) translateX(-320px);
   -moz-transform: translateX(640px) translateX(-320px) rotateY(-20deg) translateX(-320px);
@@ -342,12 +347,6 @@ a.black {
   background-position: center;
   background-repeat: no-repeat;
 }
-.logo--gulp {
-  -webkit-background-size: 25%;
-  -moz-background-size: 25%;
-  background-size: 25%;
-  background-image: url("../images/gulp.png");
-}
 .bg-photo {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -363,10 +362,13 @@ a.black {
   background-image: url("../images/umbraco.png");
 }
 .bg-photo--wired {
-  background-image: url("../images/wired.co.uk.png");
+  background-image: url("../images/wired.jpg");
 }
 .bg-photo--asp {
-  background-image: url("../images/asp.net.png");
+  background-image: url("../images/asp.jpg");
+}
+.bg-photo--redbull {
+  background-image: url("../images/redbull.jpg");
 }
 .bg-photo--large-carlton {
   background-image: url("../images/large-carlton.gif");
