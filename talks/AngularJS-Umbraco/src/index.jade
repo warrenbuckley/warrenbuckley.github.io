@@ -17,74 +17,74 @@ html
 
     article
 
-      section
+      section(data-bespoke-hash='title')
         h2 Using Angular JS & Umbraco
 
-      section
+      section(data-bespoke-hash='hello')
         h2 Hello!        
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='what-is-umbraco').light(data-bespoke-state='keyslide')
         h2 What is Umbraco?
 
-      section.bg-photo.bg-photo--umbraco
+      section(data-bespoke-hash='open-source-cms').bg-photo.bg-photo--umbraco
         h2 An Open Source .NET CMS
 
-      section
+      section(data-bespoke-hash='backoffice-ui')
         h2 New Back Office UI in V7
 
-      section
-        h2 Backoffice written in Angular JS
+      section(data-bespoke-hash='backoffice-angular')
+        h2 Backoffice written <br/> in Angular JS
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='whos-using-umbraco').light(data-bespoke-state='keyslide')
           h2 Who's using Umbraco?
 
-       section.full-screen.bg-photo.bg-photo--wired.light(data-bespoke-state='white')
+       section(data-bespoke-hash='wired').full-screen.bg-photo.bg-photo--wired.light(data-bespoke-state='white')
         h2 Wired.co.uk
 
-      section.full-screen.bg-photo.bg-photo--asp.light(data-bespoke-state='white')
+      section(data-bespoke-hash='asp').full-screen.bg-photo.bg-photo--asp.light(data-bespoke-state='white')
         h2 ASP.net
 
-      section.full-screen.bg-photo.bg-photo--redbull.light(data-bespoke-state='white')
+      section(data-bespoke-hash='redbull-stratos').full-screen.bg-photo.bg-photo--redbull.light(data-bespoke-state='white')
         h2 RedBullStratos.com
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='why-angular').light(data-bespoke-state='keyslide')
         h2 Why Angular JS?
 
-      section
-        h2 General Slide
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+      section(data-bespoke-hash='reasons-why')
+        h2.bullet Umbraco + Angular
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='what-is-a-datatype').light(data-bespoke-state='keyslide')
         h2 What is a Data Type?
 
-      section
-        h2 General Slide
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
+      section(data-bespoke-hash='datatype')
+        h2 DataType
+        h3 A datatype in Umbraco is a control that <br/> allows users to input content
+        h5 For example a WYSIWYG Editor or Image Cropper
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='extening-umbraco').light(data-bespoke-state='keyslide')
         h2 Extending Umbraco
 
-      section
+      section(data-bespoke-hash='demo')
         h2 Demo
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='what-did-we-build').light(data-bespoke-state='keyslide')
         h2.bullet What did we just build?
         ul
           li A Google Map Property Editor
           li Allowing content editors to easily pick a location
           li Giving a nicer experience than a textbox with lat & lon
 
-      section.bg-photo.bg-photo--party-kid.light(data-bespoke-state='white')
+      section(data-bespoke-hash='happy-editors').bg-photo.bg-photo--party-kid.light(data-bespoke-state='white')
         h2 Happy Content Editors
 
-      section
+      section(data-bespoke-hash='JS-HTML-only')
         h2 All with HTML, CSS & JavaScript
         h3 without C# & Visual Studio
 
-      section.bg-photo.bg-photo--large-carlton.light(data-bespoke-state='white')
+      section(data-bespoke-hash='happy-developers').bg-photo.bg-photo--large-carlton.light(data-bespoke-state='white')
         h2 Happy Developers 
 
-      section
+      section(data-bespoke-hash='package-manifest')
         h2 Package Manifest
         h3 Defining our property editor
         pre
@@ -98,7 +98,7 @@ html
                   "valueType": "JSON"
               }
             ]
-      section
+      section(data-bespoke-hash='package-manifest-prevalues')
         h2 Package Manifest
         h3 Adding in configuration options
         pre
@@ -112,7 +112,7 @@ html
               }]
             }
 
-      section
+      section(data-bespoke-hash='package-manifest-dependencies')
         h2 Package Manifest
         h3 Adding Dependencies
         pre
@@ -124,37 +124,33 @@ html
               "~/app_plugins/googlemaps/css/editor.css"
             ]
 
-      section.light(data-bespoke-state='keyslide')
+      section(data-bespoke-hash='yo-umbraco').light(data-bespoke-state='keyslide')
         h2 yo umbraco
 
-      section
+      section(data-bespoke-hash='yeoman')
         h2 We can use Yeoman
         h3 To help us to scaffold rapidly
 
-      section
+      section(data-bespoke-hash='install')
         h2 Install
         pre
           code.language-javascript.
             npm install -g yo
             npm install -g generator-umbraco
 
-      section
+      section(data-bespoke-hash='scaffold')
         h2 Scaffold
         pre
           code.language-javascript.
             cd c:/dev/umbraco/
             yo umbraco
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+            grunt watch --target=c:/path/to/umbraco/site
 
       section(data-bespoke-state='emphatic')
         h2 Emphatic Slide!
         h3 Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a>
 
-      section
+      section(data-bespoke-hash='thanks')
         img.avatar.avatar--small(src='images/me.png')
         hr
         h2 Thanks
