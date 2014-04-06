@@ -376,55 +376,6 @@ a.black {
 .bg-photo--party-kid {
   background-image: url("../images/excited-kid.gif");
 }
-.bg-photo--fight {
-  background-image: url("../images/gif/fight.gif");
-}
-.bg-photo--omg-grunt {
-  background-image: url("../images/gif/yeaa.gif");
-}
-.bg-photo--omg-plugins {
-  background-image: url("../images/gif/bubbles.gif");
-}
-.bg-photo--cowboy-reaction {
-  background-image: url("../images/gif/demitri.gif");
-}
-.bg-photo--grunt-happy {
-  background-image: url("../images/gif/neverending.gif");
-}
-.bg-photo--well-done {
-  background-image: url("../images/gif/slowclap.gif");
-}
-.bg-photo--gulp {
-  background-image: url("../images/gif/ryu.gif");
-}
-.bg-photo--gulp-api {
-  background-image: url("../images/gif/clap.gif");
-}
-.bg-photo--no {
-  background-image: url("../images/gif/no.gif");
-}
-.bg-photo--thats-it {
-  background-image: url("../images/gif/shigeru.gif");
-}
-.bg-photo--vinyl {
-  background-image: url("../images/gif/vinyl.gif");
-}
-.bg-photo--wrong-question {
-  background-image: url("../images/gif/no-answer.gif");
-}
-.bg-photo--orchestrator {
-  background-image: url("../images/gif/conductor.gif");
-  -webkit-background-size: 160%;
-  -moz-background-size: 160%;
-  background-size: 160%;
-  background-position: 50% -220px;
-}
-.bg-photo--anger {
-  background-image: url("../images/gif/angry-amy.gif");
-}
-.bg-photo--gulp-is-awesome {
-  background-image: url("../images/gif/anchorman.gif");
-}
-.bg-photo--future {
-  background-image: url("../images/gif/future.gif");
+.bg-photo--bmo-dance {
+  background-image: url("../images/bmo-dance.gif");
 }
