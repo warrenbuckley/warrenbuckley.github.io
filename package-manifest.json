@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "propertyEditors",
+    "description": "An array of Umbraco Property Editors",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "The friendly name of the property editor, shown in the Umbraco backoffice",
+            "type": "string"
+        },
+        "alias": {
+            "description": "This must be a unique alias to your property editor",
+            "type": "string"
+        },
+        "editor": {
+            "description": "This describes details about the editor",
+            "type": "object",
+            "properties": {
+                "view": {
+                    "type": "string",
+                    "description": "This is the full path to the HTML view for your property editor"
+                },
+                "valueType": {
+                    "type": "string",
+                    "description": "This is the type of data you want your property editor to save to Umbraco",
+                    "enum": [ "STRING", "JSON", "DATETIME", "TEXT", "INT" ]
+                },
+                "hideLabel": {
+                  type: "boolean",
+                  description: "If set to true this hides the label for the property editor when used in Umbraco on a document type"
+                },
+                "isReadOnly": {
+                    type: "boolean",
+                    description: "If set to true this makes the property editor read only"
+                },
+                "required": ["view", "valueType"]
+            }
+        },
+        "prevalues": {
+            type: "object",
+            description: "This is an object that stores an array of prevalue fields or options to configure yout property editor",
+            properties: {
+                "fields": {
+                    type: "object",
+                    description: "This is the collection of prevalue fields",
+                    "properties": {
+                        "key": {
+                            type: "string",
+                            description: "A unique key for the prevalue field"
+                        },
+                        "label": {
+                            type: "string",
+                            description: "The user friendly label for the prevalue"
+                        },
+                        "description": {
+                            type: "string",
+                            description: "A more detailed description for the user"
+                        },
+                        "view": {
+                            type: "string",
+                            description: "The type of editor to use for this prevalue field"
+                        },
+                        "required": [ "key", "label", "description", "view" ]
+                    }
+                }
+            }
+        },
+        required: [ "name", "alias" ]
+    },
+    "javascript": {
+        "type": "array",
+        description: "A list of Javascript files with full path to load for your property editor",
+        "items": {
+            "type": "string"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+    },
+    "css": {
+        "type": "array",
+        description: "A list of CSS files with full path to load for your property editor",
+        "items": {
+            "type": "string"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+    },
+    "required": ["name"]
+}
