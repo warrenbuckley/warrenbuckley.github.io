@@ -53,22 +53,50 @@ html
             li Bullet 2
             li Bullet 3
 
-        section
+        section(data-bespoke-hash='adding-custom-section')
           h2 Adding a Custom Section
           hr
           pre
             code.language-javascript.
               //Get SectionService
-              var sections = applicationContext.Services.SectionService;
+              var sectionService = applicationContext.Services.SectionService;
 
               //Try & find a section with the alias of "analytics"
-              var section = sections.GetSections().SingleOrDefault(x => x.Alias == "analytics");
+              var section = sectionService.GetByAlias("analytics");
 
-              if (section == null)
-              {
+              if (section == null) {
                 //It doesn't exist, so let's create the section
+                //Friendly Name, Application Alias, Icon
                 sectionService.MakeNew("Analytics", "analytics", "icon-pulse");
               }
+        section(data-bespoke-hash='creating-custom-tree-part1')
+          h2 Creating a Custom Tree
+          h3 Preparing the C class with attributes & inheritance
+          hr
+          pre
+            code.language-csharp.
+              //Alias of section to load tree in (Settings or Developer etc)
+              //Alias of this tree
+              //Friendly Name of this Tree Root
+              [Tree("analytics", "analyticsTree", "Analytics")]
+              [PluginController("Analytics")]
+              public class AnalyticsTreeController : TreeController
+              {
+                ...
+              }
+        section(data-bespoke-hash='creating-custom-tree-part2')
+          h2 Creating a Custom Tree
+          h3 Rendering out nodes in your tree
+          hr
+          pre
+            code.language-csharp.
+              //Create node
+              var n = CreateTreeNode(id, parentId, queryStrings, "Node Title");
+              n.HasChildren = false;
+              n.Icon        = "icon-globe";
+
+              //RoutePath only needed to override default route
+              n.RoutePath = "/analytics/analyticsTree/view/keywords";
         section(data-bespoke-hash='named-route')
           h2 Named Route
           h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
