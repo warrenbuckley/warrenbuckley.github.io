@@ -15,7 +15,7 @@
       <section data-bespoke-hash="title">
         <h2>The Analytics for <br/>Umbraco Story</h2><img src="analytics-logo-svg">
       </section>
-      <section data-bespoke-hash="hello">
+      <section data-bespoke-hash="hello" data-bespoke-state="keyslide" class="light">
         <h2>Hello!</h2>
       </section>
       <section data-bespoke-hash="who-do-we-build">
@@ -32,7 +32,7 @@
         <h2>And Many More </h2>
         <h3>Reckitt Beckinsser Brands</h3>
       </section>
-      <section data-bespoke-hash="begin-story">
+      <section data-bespoke-hash="begin-story" data-bespoke-state="keyslide" class="light">
         <h2>Let's begin our story</h2>
       </section>
       <section>
@@ -48,6 +48,17 @@
           <li>Bullet 3</li>
         </ul>
       </section>
+      <section data-bespoke-hash="happy-developers" data-bespoke-state="white" class="bg-photo bg-photo--large-carlton light">
+        <h2>Happy Developers</h2>
+      </section>
+      <section data-bespoke-hash="umbraco-loves-angular" data-bespoke-state="keyslide" class="light">
+        <h2 class="bullet">Umbraco <i class="fa fa-heart-o"></i> Angular </h2>
+        <ul>
+          <li>Gives easy & powerful databinding</li>
+          <li>Allows frontenders to extend Umbraco easily without having too much knowledge of Angular</li>
+          <li>It just simply works! </li>
+        </ul>
+      </section>
       <section data-bespoke-hash="adding-custom-section">
         <h2>Adding a Custom Section</h2>
         <hr>
@@ -61,7 +72,8 @@ if (section == null) {
   //It doesn't exist, so let's create the section
   //Friendly Name, Application Alias, Icon
   sectionService.MakeNew("Analytics", "analytics", "icon-pulse");
-}</code></pre>
+}
+</code></pre>
       </section>
       <section data-bespoke-hash="creating-custom-tree-part1">
         <h2>Creating a Custom Tree</h2>
@@ -75,7 +87,8 @@ if (section == null) {
 public class AnalyticsTreeController : TreeController
 {
   ...
-}</code></pre>
+}
+</code></pre>
       </section>
       <section data-bespoke-hash="creating-custom-tree-part2">
         <h2>Creating a Custom Tree</h2>
@@ -87,7 +100,8 @@ n.HasChildren = false;
 n.Icon        = "icon-globe";
 
 //RoutePath only needed to override default route
-n.RoutePath = "/analytics/analyticsTree/view/keywords";</code></pre>
+n.RoutePath = "/analytics/analyticsTree/view/keywords";
+</code></pre>
       </section>
       <section data-bespoke-hash="named-route">
         <h2>Named Route</h2>
@@ -97,6 +111,9 @@ n.RoutePath = "/analytics/analyticsTree/view/keywords";</code></pre>
       <section data-bespoke-state="emphatic">
         <h2>Emphatic Slide!</h2>
         <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3>
+      </section>
+      <section data-bespoke-hash="questions" data-bespoke-state="keyslide" class="light">
+        <h2>Questions?</h2>
       </section>
       <section data-bespoke-hash="thanks"><img src="images/me.png" class="avatar avatar--small">
         <hr>
