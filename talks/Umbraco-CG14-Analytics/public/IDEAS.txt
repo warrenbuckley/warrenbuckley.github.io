@@ -1,0 +1,46 @@
+/*
+* ---------------------------
+*      Show the analytics tool we are going to analyse
+*        This is Analytics for Umbraco (HTML5 Video loop or gif?)
+*        Why did I build it?
+*          Morten C's one no longer developed or supported in Umbraco
+*          Google dropped older API version (now requires oAuth)
+*          To learn how to build & deliver custom solutions for clients
+*        Why you too should be delivering hand crafted solutions!
+*        Build custom solutions to your client
+*          Not just pick & choose default ones
+*          With power of Angular craft & custom build property editors to suit their workflow
+*          Or custom sections to keep them in one system, so they can manage
+*          support tickets or view CRM data
+*          Remember to consider their needs & requirments, no two clients are the same
+*          Your goal as a developer to make the client or content editor or umbraco user's
+*          life pain free and help them with content entry.
+*          Re-assert point with an example - pick
+*          Help add business value to the client & make their lifes easier
+*        Enough Theory Talk - Let's Analyse this & Understand how was built
+*        By re-building this together
+*        Start with empty Umbraco 7
+*          Build up simple analytics section
+* **** How can we skip over oAuth as big topic & will get sidetracked?! ****
+*        Demo
+*          Show how to create section
+*          Summary of code in slide
+*          Note slide: Remmeber to add your section to your user
+*        Demo
+*          Show how to create custom tree
+*          Summary of code in slide
+*        Demo
+*          Show custom view/editor on the right
+*          Summary of code after
+*        Summary at End
+*          Angular HEARTS Umbraco
+*           List out why perfect fit (Easy to extend, front end dev & little to no C#)
+*          Deliver custom handcrafted solutions (HAMMER ICON or similar)
+*            Your clients will love you forever
+*            Come back to you time & time again, as you save them time with tedious tasks
+*        Thanks
+*          Photo
+*         Twitter Handle
+*          Blog url & work url
+*-----------------------------------
+*/

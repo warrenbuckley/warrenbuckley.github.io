@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>The Analytics for Umbraco Story</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+    <!-- build:css styles/styles.css-->
+    <link rel="stylesheet" type="text/css" href="bower_components/prism/themes/prism-tomorrow.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <article>
+      <section data-bespoke-hash="title">
+        <h2>The Analytics for <br/>Umbraco Story</h2><img src="analytics-logo-svg">
+      </section>
+      <section data-bespoke-hash="hello">
+        <h2>Hello!</h2>
+      </section>
+      <section data-bespoke-hash="who-do-we-build">
+        <h2>Who Do We Build Sites For?</h2>
+      </section>
+      <section data-bespoke-hash="endsleigh">
+        <h2>Endsleigh.co.uk</h2>
+      </section>
+      <section data-bespoke-hash="veet">
+        <h2>Veet</h2>
+        <h4>Built globally for x markets</h4>
+      </section>
+      <section data-bespoke-hash="rb-brands">
+        <h2>And Many More </h2>
+        <h3>Reckitt Beckinsser Brands</h3>
+      </section>
+      <section data-bespoke-hash="begin-story">
+        <h2>Let's begin our story</h2>
+      </section>
+      <section>
+        <h2>Responsive Slides</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a></h3>
+      </section>
+      <section>
+        <h2>Bullet List</h2>
+        <h3 class="bullet">Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a></h3>
+        <ul>
+          <li>Bullet 1</li>
+          <li>Bullet 2</li>
+          <li>Bullet 3</li>
+        </ul>
+      </section>
+      <section data-bespoke-hash="adding-custom-section">
+        <h2>Adding a Custom Section</h2>
+        <hr>
+        <pre><code class="language-javascript">//Get SectionService
+var sectionService = applicationContext.Services.SectionService;
+
+//Try & find a section with the alias of "analytics"
+var section = sectionService.GetByAlias("analytics");
+
+if (section == null) {
+  //It doesn't exist, so let's create the section
+  //Friendly Name, Application Alias, Icon
+  sectionService.MakeNew("Analytics", "analytics", "icon-pulse");
+}</code></pre>
+      </section>
+      <section data-bespoke-hash="creating-custom-tree-part1">
+        <h2>Creating a Custom Tree</h2>
+        <h3>Preparing the C class with attributes & inheritance</h3>
+        <hr>
+        <pre><code class="language-csharp">//Alias of section to load tree in (Settings or Developer etc)
+//Alias of this tree
+//Friendly Name of this Tree Root
+[Tree("analytics", "analyticsTree", "Analytics")]
+[PluginController("Analytics")]
+public class AnalyticsTreeController : TreeController
+{
+  ...
+}</code></pre>
+      </section>
+      <section data-bespoke-hash="creating-custom-tree-part2">
+        <h2>Creating a Custom Tree</h2>
+        <h3>Rendering out nodes in your tree</h3>
+        <hr>
+        <pre><code class="language-csharp">//Create node
+var n = CreateTreeNode(id, parentId, queryStrings, "Node Title");
+n.HasChildren = false;
+n.Icon        = "icon-globe";
+
+//RoutePath only needed to override default route
+n.RoutePath = "/analytics/analyticsTree/view/keywords";</code></pre>
+      </section>
+      <section data-bespoke-hash="named-route">
+        <h2>Named Route</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a></h3>
+        <p>Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.</p>
+      </section>
+      <section data-bespoke-state="emphatic">
+        <h2>Emphatic Slide!</h2>
+        <h3>Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a></h3>
+      </section>
+      <section data-bespoke-hash="thanks"><img src="images/me.png" class="avatar avatar--small">
+        <hr>
+        <h2>Thanks</h2>
+        <h3>Warren Buckley</h3><a href="http://twitter.com/warrenbuckley">@warrenbuckley</a>
+        <a href="http://github.com/warrenbuckley">github.com/warrenbuckley</a>
+        <p>warren@creativewebspecialist.co.uk</p>
+      </section>
+    </article>
+    <!-- build:js scripts/scripts.js-->
+    <script src="bower_components/bespoke.js/dist/bespoke.min.js"></script>
+    <script src="bower_components/bespoke-keys/dist/bespoke-keys.min.js"></script>
+    <script src="bower_components/bespoke-touch/dist/bespoke-touch.min.js"></script>
+    <script src="bower_components/bespoke-bullets/dist/bespoke-bullets.min.js"></script>
+    <script src="bower_components/bespoke-scale/dist/bespoke-scale.min.js"></script>
+    <script src="bower_components/bespoke-hash/dist/bespoke-hash.min.js"></script>
+    <script src="bower_components/bespoke-progress/dist/bespoke-progress.min.js"></script>
+    <script src="bower_components/bespoke-state/dist/bespoke-state.min.js"></script>
+    <script src="bower_components/prism/prism.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild-->
+  </body>
+</html>
