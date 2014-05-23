@@ -2,10 +2,12 @@
 * ---------------------------
 *      Show the analytics tool we are going to analyse
 *        This is Analytics for Umbraco (HTML5 Video loop or gif?)
+
 *        Why did I build it?
 *          Morten C's one no longer developed or supported in Umbraco
 *          Google dropped older API version (now requires oAuth)
 *          To learn how to build & deliver custom solutions for clients
+
 *        Why you too should be delivering hand crafted solutions!
 *        Build custom solutions to your client
 *          Not just pick & choose default ones
@@ -17,6 +19,7 @@
 *          life pain free and help them with content entry.
 *          Re-assert point with an example - pick
 *          Help add business value to the client & make their lifes easier
+
 *        Enough Theory Talk - Let's Analyse this & Understand how was built
 *        By re-building this together
 *        Start with empty Umbraco 7
@@ -38,9 +41,6 @@
 *          Deliver custom handcrafted solutions (HAMMER ICON or similar)
 *            Your clients will love you forever
 *            Come back to you time & time again, as you save them time with tedious tasks
-*        Thanks
-*          Photo
-*         Twitter Handle
-*          Blog url & work url
+*      
 *-----------------------------------
 */
