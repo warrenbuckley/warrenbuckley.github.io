@@ -6,6 +6,7 @@ html
     title The Analytics for Umbraco Story
 
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,600', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', type='text/css', href='bower_components/font-awesome/css/font-awesome.min.css')
 
     // build:css styles/styles.css
     //- Check out 'src/bower_components/prism/themes/' for available themes
@@ -91,8 +92,7 @@ html
               //Friendly Name of this Tree Root
               [Tree("analytics", "analyticsTree", "Analytics")]
               [PluginController("Analytics")]
-              public class AnalyticsTreeController : TreeController
-              {
+              public class AnalyticsTreeController : TreeController {
                 ...
               }
 
