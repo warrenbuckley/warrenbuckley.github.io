@@ -379,3 +379,9 @@ a.black {
 .bg-photo--bmo-dance {
   background-image: url("../images/bmo-dance.gif");
 }
+.bg-photo--craftsman-workshop {
+  background-image: url("../images/craftsman-workshop.png");
+}
+.bg-photo--craftsman-tools {
+  background-image: url("../images/craftsman-tools.png");
+}
