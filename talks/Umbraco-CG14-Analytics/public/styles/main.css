@@ -385,3 +385,9 @@ a.black {
 .bg-photo--craftsman-tools {
   background-image: url("../images/craftsman-tools.png");
 }
+.bg-photo--endsleigh {
+  background-image: url("../images/endsleigh.jpg");
+}
+.bg-photo--veet {
+  background-image: url("../images/veet.jpg");
+}
