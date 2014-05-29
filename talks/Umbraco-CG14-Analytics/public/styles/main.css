@@ -391,3 +391,12 @@ a.black {
 .bg-photo--veet {
   background-image: url("../images/veet.jpg");
 }
+.bg-photo--no {
+  background-image: url("../images/no-office.gif");
+}
+.bg-photo--yes {
+  background-image: url("../images/brent-says-yes.gif");
+}
+.bg-photo--collab {
+  background-image: url("../images/collab.jpg");
+}
