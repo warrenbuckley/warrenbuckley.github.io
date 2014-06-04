@@ -358,6 +358,10 @@ a.black {
   background-color: rgba(246,134,31,0.9);
   padding: 0 15px;
 }
+.bg-photo h3 {
+  background-color: rgba(246,134,31,0.9);
+  padding: 0 15px;
+}
 .bg-photo--umbraco {
   background-image: url("../images/umbraco.png");
 }
