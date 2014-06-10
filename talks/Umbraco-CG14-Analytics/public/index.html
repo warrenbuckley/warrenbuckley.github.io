@@ -122,7 +122,7 @@ if (section == null) {
         <h2>Creating a Custom Tree</h2>
         <h3>Preparing the C# class with attributes & inheritance</h3>
         <hr>
-        <pre><code class="language-csharp">//Alias of section to load tree in (Settings or Developer etc)
+        <pre><code class="language-javascript">//Alias of section to load tree in (Settings or Developer etc)
 //Alias of this tree
 //Friendly Name of this Tree Root
 [Tree("analytics", "analyticsTree", "Analytics")]
@@ -136,7 +136,7 @@ public class AnalyticsTreeController : TreeController {
         <h2>Creating a Custom Tree</h2>
         <h3>Rendering out nodes in your tree with C#</h3>
         <hr>
-        <pre><code class="language-csharp">//Create node
+        <pre><code class="language-javascript">//Create node
 var n = CreateTreeNode(id, parentId, queryStrings, "Node Title");
 n.HasChildren = false;
 n.Icon        = "icon-globe";
